@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "es6",
+    "baseUrl": "./", // 设置别名先设置baseUrl
+    "strict": true,
+    "target": "ES6",
+    "noEmitOnError": true,
+    // "noEmit": true, // 一般不要加这个
+    "paths": {
+      // 设置路径别名
+      "@/*": ["src/*"]
+    },
+    "allowJs": true,
+    "moduleResolution": "Node" // 关于import 引入 node_modules的 将每个文件作为单独的模块
+  },
+  "exclude": ["node_modules", "dist", "*.js"]
+}
