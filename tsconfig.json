@@ -8,7 +8,8 @@
     // "noEmit": true, // 一般不要加这个
     "paths": {
       // 设置路径别名
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "@img/*": ["src/static/img/*"]
     },
     "allowJs": true,
     "moduleResolution": "Node" // 关于import 引入 node_modules的 将每个文件作为单独的模块

@@ -1,6 +1,9 @@
 <template>
   <div @click="clkBtn">
-    {{ msg }}
+    <p>
+      {{ msg }}
+    </p>
+    <co-loading :loading="true"></co-loading>
   </div>
 </template>
 

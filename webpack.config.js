@@ -121,7 +121,8 @@ module.exports = {
     target: 'web',
     resolve: {
         alias: {
-            '@': resolve(__dirname, 'src')
+            '@': resolve(__dirname, 'src'),
+            '@img': resolve(__dirname, 'src/static/img')
         },
         extensions: ['.js', '.ts', 'vue']
     },
