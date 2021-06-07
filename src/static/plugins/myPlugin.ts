@@ -6,12 +6,14 @@
  * 这样的好处就是作为插件的编写方不需要再额外去import Vue了
  */
 
-import loading from "@/componments/loading/loading.vue";
-import { VueConstructor } from "vue";
-export default function(Vue: {
+interface VueType {
   prototype: { $name: string };
   component: (arg0: string, arg1: VueConstructor<loading>) => void;
-}) {
+};
+
+import loading from "@/componments/loading/loading.vue";
+import { VueConstructor } from "vue";
+export default function(Vue: VueType): void {
   Vue.prototype.$name = "Cool UI";
   Vue.component("coLoading", loading);
 }

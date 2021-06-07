@@ -1,5 +1,5 @@
 <template>
-  <div @click="clkBtn">
+  <div @click="clkBtn" id="app">
     <p>
       {{ msg }}
     </p>
@@ -25,4 +25,19 @@ export default Vue.extend({
 });
 </script>
 
-<style></style>
+<style lang="scss">
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+body {
+  margin: 0;
+}
+</style>

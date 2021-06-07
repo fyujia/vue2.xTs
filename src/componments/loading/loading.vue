@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="loading" v-if="loading">
-      <img src="@img/1.jpg" />
+      <img src="@img/1.jpg" title="jocker"/>
     </div>
   </div>
 </template>
