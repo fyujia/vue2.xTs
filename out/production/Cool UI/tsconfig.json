@@ -14,5 +14,5 @@
     "allowJs": true,
     "moduleResolution": "Node" // 关于import 引入 node_modules的 将每个文件作为单独的模块
   },
-  "exclude": ["node_modules", "dist", "*.js", "*.java"]
+  "exclude": ["node_modules", "dist", "*.js"]
 }

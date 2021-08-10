@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="loading" v-if="loading">
-      <img src="@img/1.jpg" title="jocker"/>
+      <img src="@img/1.gif" title="jocker" />
     </div>
   </div>
 </template>
@@ -15,9 +15,25 @@ export default Vue.extend({
   props: {
     loading: { type: Boolean, required: true },
   },
-  mounted() {},
+  mounted() {
+  },
   methods: {},
 });
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  img {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 40vh auto;
+  }
+}
+</style>

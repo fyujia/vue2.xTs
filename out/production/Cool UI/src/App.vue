@@ -3,7 +3,7 @@
     <p>
       {{ msg }}
     </p>
-    <co-loading :loading="loading"></co-loading>
+    <co-loading :loading="true"></co-loading>
   </div>
 </template>
 
@@ -12,15 +12,10 @@ import Vue from "vue";
 export default Vue.extend({
   data() {
     return {
-      loading: true,
       msg: "this is a simple Vue Project !",
     };
   },
-  mounted() {
-    setTimeout(() => {
-      this.loading = false;
-    }, 5000);
-  },
+  mounted() {},
   methods: {
     clkBtn() {
       console.log(this);

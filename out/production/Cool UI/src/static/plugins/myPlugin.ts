@@ -5,15 +5,15 @@
  * 并且在这个install方法的第一个参数我们可以拿到Vue对象，
  * 这样的好处就是作为插件的编写方不需要再额外去import Vue了
  */
-import VueType from '@/static/plugins/vueType'
+
+interface VueType {
+  prototype: { $name: string };
+  component: (arg0: string, arg1: VueConstructor<loading>) => void;
+};
+
 import loading from "@/componments/loading/loading.vue";
-export function setPrototype(Vue: VueType): void {
+import { VueConstructor } from "vue";
+export default function(Vue: VueType): void {
   Vue.prototype.$name = "Cool UI";
   Vue.component("coLoading", loading);
 }
-
-export const moduleHot = () => {
-  if (module.hot) {
-    module.hot.accept();
-  }
-};
