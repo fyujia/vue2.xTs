@@ -1,4 +1,4 @@
-import { VueConstructor } from "out/production/Cool UI/node_modules/vue/types";
+import { VueConstructor } from "vue/types";
 
 type VueType = {
   prototype: { $name: string };
